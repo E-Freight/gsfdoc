@@ -1,11 +1,19 @@
-site_name: EFC Docs
+site_name: GSF Docs
 theme: readthedocs
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-markdown_extensions:
-  - mdx_math:
-      enable_dollar_delimiter: True  #for use of inline $..$
 
-pages:
-    - 'AES/index.md': 'AES/index.md'
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown_fenced_code_tabs:
+      template: 'default'
+      
+# Page tree
+nav:
+    - AES Webapi : 'docs/AES/EDIAPI_en.md'

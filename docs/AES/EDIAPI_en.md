@@ -19,6 +19,7 @@ HttpResponse
     "expires_in": 86399
 }
   ```
+
 |Description||
 |--|--|
 |  URL|http://edi.gsf24.com/token  |
